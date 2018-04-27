@@ -1,4 +1,6 @@
 # sushi-sandwich-classifier
+
+I've added detailed comments in the jupyter notebook also to showcase the reasoning.
 Data:
 402 Images of sandwich and 402 images of sushi. All images are of different sizes ranging from 199by199 to 1024by1024. 
 
@@ -40,3 +42,9 @@ should help. As a customer I’d prefer a “I don’t know” rather than a wro
 – more categories of food, better classification. This is because the pre-trained network is on IMAGENET where the images were of 
 dogs, cats, etc.
 
+Docker:
+
+docker build -t sushi-sandwich-clf .
+docker run -it -p 8888:8888 -v /Users/sharadjoshi/Desktop/Job\ applications/Cookpad/Assignment/Final/:/Cookpad/Assignment sushi-sandwich-clf jupyter notebook --ip=0.0.0.0 --allow-root
+
+The jupyter notebook is in the Cookpad/Assignment folder.
