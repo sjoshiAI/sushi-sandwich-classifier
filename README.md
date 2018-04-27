@@ -1,6 +1,7 @@
 # sushi-sandwich-classifier
 
 I've added detailed comments in the jupyter notebook also to showcase the reasoning.
+
 Data:
 402 Images of sandwich and 402 images of sushi. All images are of different sizes ranging from 199by199 to 1024by1024. 
 
