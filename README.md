@@ -42,14 +42,14 @@ should help. As a customer I’d prefer a “I don’t know” rather than a wro
 4. Given the resources, maybe train the full mobile-net model from scratch for Food related images; this will serve two purposes 
 – more categories of food, better classification. This is because the pre-trained network is on IMAGENET where the images were of 
 dogs, cats, etc.
+5. After detecting the image, maybe we can relate that to the cuisine involved and recommend some good food products in that regime. Basically including a recommendation system with the model will prove quite beneficial to the customer.
+
+Including more categories of food and deploying the model with some pretrained
 
 Docker:
 
 docker build -t sushi-sandwich-clf .
 
-
 docker run -it -p 8888:8888 -v /Users/sharadjoshi/Desktop/Job\ applications/Cookpad/Assignment/Final/:/Cookpad/Assignment sushi-sandwich-clf jupyter notebook --ip=0.0.0.0 --allow-root
-
-
 
 The jupyter notebook is in the Cookpad/Assignment folder.
