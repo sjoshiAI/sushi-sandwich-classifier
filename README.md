@@ -45,6 +45,10 @@ dogs, cats, etc.
 Docker:
 
 docker build -t sushi-sandwich-clf .
+
+
 docker run -it -p 8888:8888 -v /Users/sharadjoshi/Desktop/Job\ applications/Cookpad/Assignment/Final/:/Cookpad/Assignment sushi-sandwich-clf jupyter notebook --ip=0.0.0.0 --allow-root
+
+
 
 The jupyter notebook is in the Cookpad/Assignment folder.
