@@ -14,11 +14,11 @@ Approach:
 
 Procedure:
 1.	I used transfer learning for this task. Initially I chose InceptionResnet to get the best results and achieved 92.93% accuracy 
-with 0.899 F1 score. Although the scores are really good and it performs classification quite well, this model takes quite a lot of 
-space and is not very suitable for mobile applications. So I chose MobileNet next which is much lighter and suitable for this purpose.
+with 0.899 F1 score. Although the scores were really good and it performed classification quite well, this model was taking quite a lot of 
+space and was not very suitable for mobile applications. So I chose MobileNet next which is much lighter and suitable for this purpose.
 2.	I first used the bottleneck weights (saved to reduce computational time) from the pre-trained model and added a fully connected 
 layer on top of it to make prediction.  So the model was like pre-trained features – hidden layer-output layer. I later realized 
-that adding the hidden layer only slows down the training and doesn’t add much to the performance of the model. So I discarded and 
+that adding the hidden layer only slows down the training and doesn’t add much to the performance of the model. So I discarded the 
 hidden layer and directly made predictions from pre-trained features.
 3.	After that I tried fine-tuning 2 of the frozen layers of the pre-trained network but that didn’t improve the model performance 
 much so I discarded that idea. 
